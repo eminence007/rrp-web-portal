@@ -1,11 +1,10 @@
-import React from "react";
-import "./style.css";
+import './App.css';
 
-export default function App() {
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <div></div>
   );
 }
