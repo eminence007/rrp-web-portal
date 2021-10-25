@@ -9,19 +9,7 @@ import React from 'react'
 function App() {
   return (
     <div>
-    <Router>
-    <Nav/>
-      <Switch>
-        <Route exact path="/home">
-            <Home/>
-        </Route>
-        <Route exact path="/">
-            <Home/>
-        </Route>
-       
-      </Switch>
-    </Router>
-    <Footer/>
+    HI
     </div>
   );
 }
