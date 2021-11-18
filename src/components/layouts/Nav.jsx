@@ -8,11 +8,7 @@ import { IconContext } from "react-icons"
 
 
 function Navigation() {
-    return (
-        <div>
-        <div className="head">
-        <h2>राइट टू रिकॉल पार्टी</h2>
-        </div>
+    return ( 
         <Navbar collapseOnSelect expand="lg" variant="dark" className="navigation-section">
         <Container>
         <Navbar.Brand as={Link} to="/home">
@@ -44,7 +40,6 @@ function Navigation() {
         </Navbar.Collapse>
         </Container>
       </Navbar>
-        </div>
     )
 }
 
