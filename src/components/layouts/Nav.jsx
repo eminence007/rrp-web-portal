@@ -9,7 +9,7 @@ import { IconContext } from "react-icons"
 
 function Navigation() {
     return ( 
-        <Navbar collapseOnSelect expand="lg" variant="dark" className="navigation-section">
+        <Navbar collapseOnSelect expand="lg" variant="dark" className="navigation-section" >
         <Container>
         <Navbar.Brand as={Link} to="/home">
         <IconContext.Provider value={{ className: "home-icon" }}>
