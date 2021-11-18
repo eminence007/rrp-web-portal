@@ -6,7 +6,7 @@ import  './Home.css'
 function Home() {
     return (
         <>
-        <Carousel nextLabel={null} prevLabel={null} fade={true }>
+        <Carousel className='container carousel' nextLabel={null} prevLabel={null} fade={true }>
         <Carousel.Item>
           <img
             className="d-block w-100"
