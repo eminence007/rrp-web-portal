@@ -1,12 +1,13 @@
+
 import React from 'react'
 import {Carousel} from 'react-bootstrap'
-import  './Home.css'
+import  './Slider.css'
 
 
-function Home() {
+function Slider() {
     return (
-        <>
-        <Carousel className='container carousel' nextLabel={null} prevLabel={null} fade={true } interval={3000}>
+
+        <Carousel className='carousel rounded' nextLabel={null} prevLabel={null} fade={true } interval={3000}>
         <Carousel.Item>
           <img
             className="d-block w-100"
@@ -28,10 +29,6 @@ function Home() {
             alt="Third slide"
           />
         </Carousel.Item>
-      </Carousel>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id officia tempore debitis ut mollitia dolorum quisquam quam ab? Cumque nihil soluta laboriosam perspiciatis sint assumenda quam animi eos aperiam ipsam, impedit rerum mollitia consequuntur asperiores beatae debitis inventore excepturi provident id est recusandae distinctio perferendis ducimus. Reiciendis, mollitia? Perferendis, distinctio. </p>
-        </>
-    )
+      </Carousel>)
 }
-
-export default Home
+export default Slider

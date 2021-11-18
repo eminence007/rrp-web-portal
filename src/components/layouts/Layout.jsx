@@ -10,7 +10,7 @@ function Layout(props) {
       <>
       <TopBanner/>
       <Nav/>
-      <main>{props.children}</main>
+      <main className='mx-md-3 mx-sm-0'>{props.children}</main>
       <Footer/>
       </>
 
