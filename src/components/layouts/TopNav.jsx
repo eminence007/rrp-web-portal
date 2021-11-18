@@ -1,5 +1,5 @@
 import React from 'react';
-import './Nav.css'
+import classes from './TopNav.module.css'
 import {Navbar,Nav,Container,NavDropdown} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import {FaHome} from "react-icons/fa"
@@ -7,12 +7,12 @@ import { IconContext } from "react-icons"
 
 
 
-function Navigation() {
+function TopNav() {
     return ( 
-        <Navbar collapseOnSelect expand="sm" variant="dark" className='navigation-section'>
+        <Navbar collapseOnSelect expand="sm" variant="dark" className={classes['navigation-section']}>
         <Container>
         <Navbar.Brand as={Link} to="/home">
-        <IconContext.Provider value={{ className: "home-icon" }}>
+        <IconContext.Provider value={{ className: classes["home-icon"] }}>
         <FaHome />
         </IconContext.Provider>
         </Navbar.Brand>
@@ -43,4 +43,4 @@ function Navigation() {
     )
 }
 
-export default Navigation
+export default TopNav

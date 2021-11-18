@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer'
-import Nav from './Nav'
+import TopNav from './TopNav'
 import TopBanner from './TopBanner'
 
 
@@ -9,7 +9,7 @@ function Layout(props) {
      
       <>
       <TopBanner/>
-      <Nav/>
+      <TopNav/>
       <main className='mx-md-3 mx-sm-0'>{props.children}</main>
       <Footer/>
       </>
