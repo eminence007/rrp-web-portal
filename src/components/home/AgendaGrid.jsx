@@ -39,7 +39,7 @@ function AgendaGrid(){
     </Col>
     <Col sm={12} md={6} lg={4} className='row-gap'>
     <Card className='card'>
-    <Card.Img className='image' variant="bottom" src="https://cdn-icons.flaticon.com/png/128/4687/premium/4687490.png?token=exp=1637344550~hmac=6ce10dc0b44259e687845a543ecd89d7" />
+    <Card.Img className='image' variant="bottom" src="https://i.postimg.cc/vZgDNC5d/vvcm.png" />
     <Card.Body><Card.Title>Votevapsi CM</Card.Title></Card.Body>
     </Card>
     </Col>
