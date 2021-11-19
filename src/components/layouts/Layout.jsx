@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from './Footer'
-import TopNav from './TopNav'
 import Header from './Header'
 
 
