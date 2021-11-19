@@ -1,16 +1,20 @@
 import React from 'react';
-import './TopNav.css'
+import classes from './TopNav.module.css'
 import {Navbar,Nav,Container,NavDropdown} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
+import {FaHome} from "react-icons/fa"
+import { IconContext } from "react-icons"
+
 
 
 function TopNav() {
-    return (
-       
-        <Navbar collapseOnSelect expand="lg" variant="dark" className="navigation-section">
+    return ( 
+        <Navbar collapseOnSelect expand="sm" variant="dark" className={classes['navigation-section']}>
         <Container>
         <Navbar.Brand as={Link} to="/home">
-            <img src="https://www.pngfind.com/pngs/b/379-3791531_hexagon-icon-png.png" alt="" width="40px"/>
+        <IconContext.Provider value={{ className: classes["home-icon"] }}>
+        <FaHome />
+        </IconContext.Provider>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -36,7 +40,6 @@ function TopNav() {
         </Navbar.Collapse>
         </Container>
       </Navbar>
-       
     )
 }
 
