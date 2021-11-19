@@ -1,0 +1,19 @@
+.agendatitle{
+ text-align: center;
+}
+.row-gap{
+  margin-top: 30px;
+}
+.card{
+  aspect-ratio: 1;
+  border-width: thick;
+    border-color: black;
+    align-content: center;
+    align-items: center;
+    
+}
+.image{
+  width: 60%;
+  aspect-ratio: 1;
+}
+

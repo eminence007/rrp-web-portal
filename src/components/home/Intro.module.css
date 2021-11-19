@@ -1,4 +1,9 @@
 .intro-text{
-  text-align: justify;
+  text-align: center;
   font-size: 1rem;
+  margin:auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 85%;
+  align-content: center;
 }
