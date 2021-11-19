@@ -1,16 +1,15 @@
 import './App.css';
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './components/pages/Home'
-import Layout from './components/layouts/Layout'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Layout from './components/layouts/Layout';
+import Home from './components/pages/Home'
 import React from 'react'
 
 function App() {
   return (
-
+    
     <Router>
-    <Layout>
+     <Layout>
       <Switch>
         <Route exact path="/home">
             <Home/>
@@ -21,9 +20,10 @@ function App() {
        
       </Switch>
       </Layout> 
+      
     </Router>
-   
-
+    
+  
   );
 }
 

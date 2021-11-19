@@ -1,14 +1,14 @@
-import React from 'react';
-import Slider from '../home/Slider';
-import Intro from '../home/Intro';
+import React from 'react'
+import Slider from '../home/Slider'
+import Intro from '../home/Intro'
 
 function Home() {
-  return (
-    <>
-      <Slider />
-      <Intro />
-    </>
-  );
+    return (
+       <>
+       <Slider/>
+       <Intro/> 
+       </>
+    )
 }
 
-export default Home;
+export default Home
