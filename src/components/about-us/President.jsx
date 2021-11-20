@@ -5,7 +5,7 @@ function President() {
     return (
        <>
        <p>
-         President
+         President 1
        </p>
        </>
     )
