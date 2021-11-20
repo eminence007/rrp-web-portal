@@ -8,6 +8,7 @@ import Articles from './components/pages/Articles'
 import AboutParty from './components/pages/AboutParty'
 import AboutPresident from './components/pages/AboutPresident'
 import AboutMovement from './components/pages/AboutMovement'
+import ArticleEditor from './components/editor/ArticleEditor'
 import React from 'react'
 
 function App() {
@@ -37,6 +38,10 @@ function App() {
         <Route exact path="/about-movement">
             <AboutMovement/>
         </Route>
+        <Route exact path="/editor">
+            <ArticleEditor/>
+        </Route>
+
       </Switch>
       </Layout> 
       
