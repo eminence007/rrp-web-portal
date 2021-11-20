@@ -31,9 +31,9 @@ function TopNav() {
               <NavDropdown.Item  as={Link} to="/citizen-duty-day">नागरिक कर्तव्य दिवस</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="हमारे बारे में" id="collasible-nav-dropdown">
-              <NavDropdown.Item  as={Link} to="/the-movement">आंदोलन</NavDropdown.Item>
-              <NavDropdown.Item  as={Link} to="/the-party">पार्टी</NavDropdown.Item>
-              <NavDropdown.Item  as={Link} to="/the-president">अध्यक्ष</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about-movement">आंदोलन</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about-party">पार्टी</NavDropdown.Item>
+              <NavDropdown.Item  as={Link} to="/about-president">अध्यक्ष</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/contact-us">संपर्क करें</Nav.Link>
           </Nav>
