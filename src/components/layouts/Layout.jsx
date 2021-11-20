@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from './Footer'
 import Header from './Header'
+import classes from './Layout.module.css'
 
 
 function Layout(props) {
@@ -8,7 +9,7 @@ function Layout(props) {
      
       <>
       <Header/>
-      <main>{props.children}</main>
+      <main className={classes.content}>{props.children}</main>
       <Footer/>
       </>
 
