@@ -5,6 +5,9 @@ import Layout from './components/layouts/Layout';
 import Home from './components/pages/Home'
 import Drafts from './components/pages/Drafts'
 import Articles from './components/pages/Articles'
+import AboutParty from './components/pages/AboutParty'
+import AboutPresident from './components/pages/AboutPresident'
+import AboutMovement from './components/pages/AboutMovement'
 import React from 'react'
 
 function App() {
@@ -24,6 +27,15 @@ function App() {
         </Route>
         <Route exact path="/articles">
             <Articles/>
+        </Route>
+        <Route exact path="/about-party">
+            <AboutParty/>
+        </Route>
+        <Route exact path="/about-president">
+            <AboutPresident/>
+        </Route>
+        <Route exact path="/about-movement">
+            <AboutMovement/>
         </Route>
       </Switch>
       </Layout> 

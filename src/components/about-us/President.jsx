@@ -11,4 +11,4 @@ function President() {
     )
 }
 
-export default Home
+export default President
