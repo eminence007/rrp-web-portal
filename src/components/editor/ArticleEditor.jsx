@@ -1,6 +1,5 @@
 
 import React from 'react';
-import * as ReactDOM from 'react-dom';
 import MarkdownIt from 'markdown-it';
 import MdEditor from 'react-markdown-editor-lite';
 
