@@ -12,7 +12,7 @@ const ArticleEditor = (props) => {
   }
   const handleSubmission = useCallback(async () => {
     console.log("The text is :" + articleText);
-    var articlefile = new File(articleText, "article1.md", {
+    var articlefile = new File([articleText], "article1.md", {
       type: "text/markdown"
     });
     const formData = new FormData();
@@ -27,17 +27,22 @@ const ArticleEditor = (props) => {
         }
       }
     );
-    const data = await response.json();
-    console.log(data);
+    if (response.status >= 200 && response.status <= 299) {
+      const jsonResponse = await response.json();
+      console.log(jsonResponse);
+    } else {
+      // Handle errors
+      console.log(response.status, response.statusText);
+    }
   }, [articleText]);
 
-  useEffect(() => {
-    if (firstLoad) {
-      firstLoad = false;
-      return;
-    }
-    handleSubmission();
-  }, [handleSubmission]);
+  // useEffect(() => {
+  //   if (firstLoad) {
+  //     firstLoad = false;
+  //     return;
+  //   }
+  //   handleSubmission();
+  // }, [handleSubmission]);
 
   return (
     <>
