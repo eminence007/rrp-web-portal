@@ -1,9 +1,8 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import MarkdownIt from "markdown-it";
 import MdEditor from "react-markdown-editor-lite";
 import "react-markdown-editor-lite/lib/index.css";
 const mdParser = new MarkdownIt();
-let firstLoad = true;
 const ArticleEditor = (props) => {
   const [articleText, setArticleText] = useState("");
   function handleEditorChange({ html, text }) {
