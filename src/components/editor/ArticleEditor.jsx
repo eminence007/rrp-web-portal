@@ -9,39 +9,26 @@ const ArticleEditor = (props) => {
     //console.log("handleEditorChange", html, text);
     setArticleText(text);
   }
-  const handleSubmission = useCallback(async () => {
-    console.log("The text is :" + articleText);
-    var articlefile = new File([articleText], "article1.md", {
+  const handleSubmission = () => {
+    let articlefile = new File([articleText], "article5.md", {
       type: "text/markdown"
     });
     const formData = new FormData();
-    formData.append("profilePhoto", articlefile);
-    const response = await fetch(
-      "https://rrp-web-api.herokuapp.com/user/photoUpload",
-      {
-        method: "POST",
-        body: formData,
-        headers: {
-          "Content-Type": "multipart/form-data"
-        }
-      }
-    );
-    if (response.status >= 200 && response.status <= 299) {
-      const jsonResponse = await response.json();
-      console.log(jsonResponse);
-    } else {
-      // Handle errors
-      console.log(response.status, response.statusText);
-    }
-  }, [articleText]);
 
-  // useEffect(() => {
-  //   if (firstLoad) {
-  //     firstLoad = false;
-  //     return;
-  //   }
-  //   handleSubmission();
-  // }, [handleSubmission]);
+    formData.append("profilePhoto", articlefile);
+
+    fetch("https://rrp-web-api.herokuapp.com/user/photoUpload", {
+      method: "POST",
+      body: formData
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        console.log("Success:", result);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  };
 
   return (
     <>
