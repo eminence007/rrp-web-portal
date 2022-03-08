@@ -1,0 +1,395 @@
+[
+    {
+      "id": 1,
+      "name": "धनवापसी पासबुक",
+      "intro":"some intro text",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=19eTAQXUlXG4UgvuDuF5_Vff5yixBpEJo"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1J_s0SaUlHkqmfeVkR15leuaebtXhehIf"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1POBtBKtUHfdno_SRbRgWdF_TtbSewC_Y"
+      }]
+    },
+    {
+      "id": 4,
+      "name": "रिक्त भूमि कर",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=11NXYrbVmuAv_RJcPSObojfx6ncTPblx"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1E1KIO2u_nrCtzAL6eAWRxknKBNjESnNe"
+      }]
+    },
+    {
+      "id": 6,
+      "name": "जूरी कोर्ट",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=1d0AZaEkoo4kxsBZ3WQJp9dF6evV_4KTG"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1BzikVRT9e7V2A-HxS-Io6LGyOS3oeFLF"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1qsKDrXiY17yOfGHAnNi2-FCmBjBm9gV1"
+      }]
+    },
+    {
+      "id": 9,
+      "name": "राज्य जूरी कोर्ट",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=1LYgc8SRj6TI7zF1-qa82n-oOP858tw-B"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1q7WL8gABzjMmu-b00NBKxkPRgqYLYNU3"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1sIcSXEt-P1DsgLMHE4PosKUvHZdL1pfP"
+      }]
+    },
+    {
+      "id": 12,
+      "name": "जिला जूरी कोर्ट",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1U5o1Cb6AAKpvsvaVckbJqFpQLFa4l0Ix"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1XkRVM56xN0DwSX0hGYwoWLOO4sTrKtW8"
+      }]
+    },
+    {
+      "id": 14,
+      "name": "वोइक",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1c0-TlmLuUhsYlGdxL0zhWY-1NUUOsgR2"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=13X16kyhomOtd_hEdg6RYCVkJtk3OHyZG"
+      }]
+    },
+    {
+      "id": 16,
+      "name": "वोटवापसी डीडी चेयरमैन",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1QM4vVdGJ8-PGV7D1AYRHHQkzXl1XjpNS"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1xA-HwsVmgIy7i7kJ6Es7ezlf-HzjPL92"
+      }]
+    },
+    {
+      "id": 18,
+      "name": "वोटवापसी केंद्रीय मंत्री",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1PkTf9hS5UNXmcE62HHbH_YE8SI4h8hDi"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=19F31D3-l_gckO0iFMs9t_McbT3Ne0v3w"
+      }]
+    },
+    {
+      "id": 20,
+      "name": "वोटवापसी राज्य मंत्री",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1AwuKlh-C0ExRh86aSkafGqfX2ETQzNQk"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1DH9O2L3m-vvGaczQejxZh-Vt9oiub-Wt"
+      }]
+    },
+    {
+      "id": 22,
+      "name": "राष्ट्रीय हिन्दू बोर्ड",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=1JASsMXVTfGXzWYjL7mSrXRcml38QGvWX"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1f-OB_xk5MRY-CJ9ZGlf_MwX8iJp6n8If"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=16BwrqW8N0hAGEUJb_i8jucMSZJuouCrb"
+      }]
+    },
+    {
+      "id": 25,
+      "name": "गौ निति",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=1_HdTmAs79Fk6UZbAs6j1cgW_Sd7bfUBo"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1fChWGEu05gUFklewuzX-CNmwFSht_XSs"
+      }]
+    },
+    {
+      "id": 27,
+      "name": "जूरी पंचायत",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=14c_WUjNse_QJcmcFutYYQ9_Tu6putIen"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1b6IgR0YfJCLItuIqErTXNpLuOQ6fDNVj"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1OgXdj-wD4L2soguqoIP7HC5qicwsmt3v"
+      }]
+    },
+    {
+      "id": 30,
+      "name": "चाइल्ड लॉ",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1w3CyQRkkzrGi39KLzt5ZnqpF4_-hSaa-"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=11C4jAfohVVRC5ODO_ZXWM-fJ0ZwFXkFZ"
+      }]
+    },
+    {
+      "id": 32,
+      "name": "एनआरसीआई",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1D6qa-GestzGaaS5AJRM5VGi_1qnAvX5G"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1dXrleFV38p-JV4NfF2o9gDybygI1h7Er"
+      }]
+    },
+    {
+      "id": 34,
+      "name": "गन लॉ भारत",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1sCZTDrBl08uTYez56fHgYl9OoQRXt2iI"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1pQR_9K-aEB4snAYSukK5ae0GAAXm2xBR"
+      }]
+    },
+    {
+      "id": 36,
+      "name": "राज्य गन लॉ",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1ZGEgIvJW4Ya8XfJVM9pjJDPyX_CtQj2p"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1zvTau5HUhSaOmnejf6uOf5VkthbH6ooo"
+      }]
+    },
+    {
+      "id": 38,
+      "name": "जिला गन लॉ",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1IlL0-AUjpeNVoBj9NGsVKRaA3yt-SKN5"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1IUnZuG07uTGsUcUrcmSXCMi1I832bG6R"
+      }]
+    },
+    {
+      "id": 40,
+      "name": "टी सी पी",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1x2fFkqnFjVuSctUrv0zXRDdSdMUKF1AO"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1k-0LShIgKV2rHf6HOUNYvq_E5ql0_zFA"
+      }]
+    },
+    {
+      "id": 42,
+      "name": "राज्य टी सी पी",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1lRuNCqIfkO3w0KvN_eUB3Pn1rRsC0jlG"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1bouiqvi9kvNlpKGE8DAAuXlLj0SRI1DR"
+      }]
+    },
+    {
+      "id": 44,
+      "name": "जिला टी सी पी",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1LvQPhuZXZkKpy_eX1DTSYeZH2lyWC0jj"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1GDGtkLrg95CQJy-tfJbkjuUM5B7-Sal_"
+      }]
+    },
+    {
+      "id": 46,
+      "name": "वोटवापसी सांसद एवं विधायक",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=11JENQUqAcwJkpPq0KzUPpSRhb8JANgpM"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1-aRKn0YicY6xKfYkgyBSXpOAqe_w5mhp"
+      }]
+    },
+    {
+      "id": 48,
+      "name": "जिला रेडो",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1v82Dg5usSq1vQH4Z0jOKE9kUGqXHKNrp"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1xTWBtv4UgeTV9H9zksm5jCir-6kPBfhJ"
+      }]
+    },
+    {
+      "id": 50,
+      "name": "रेगो",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1lOrGsf_IFagtPRjAcS0JnniZLXZTRVFz"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1tv8V_bAIlc7L-YtzvrRAOYm7ZL_YPWZs"
+      }]
+    },
+    {
+      "id": 52,
+      "name": "वोटवापसी मुख्यमंत्री",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1MQ__7m_JlM63TQYe8LieDOI0y3bdnPEu"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1Fmn63mnonlelTEEJnw4n9eDK9ZVfK1kn"
+      }]
+    },
+    {
+      "id": 54,
+      "name": "वोटवापसी प्रधानमंत्री",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1ozTAry6NwNPM5Cdxvubou9x0VXmlKHtn"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1DE4SfuWAvR9kAA9qX1aX8y6r1K9PuIec"
+      }]
+    },
+    {
+      "id": 56,
+      "name": "इतिहास संशोधित",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=19cJXdIJIyUOuMot5NNLJKKIGxXgxyFDd"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1qTqEbXwEG0DT2Cz8Wdcli9hRqi1chfZ8"
+      }]
+    },
+    {
+      "id": 58,
+      "name": "आरक्षण",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1wwFOcUJV0pac3ud8uAygDfPG9Lt9myff"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1tOo8dP2TWH2ibvgPjTUF7R8xwDGxsuvg"
+      }]
+    },
+    {
+      "id": 60,
+      "name": "वोटवापसी सरपंच",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=1BODPTIzdLZ8bHH0pA9n-h5mEdkDdqcFX"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1dgSK9icpze8Cemx3qPrFqSryRp5q-tMt"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1rCBvU4fb7lE9D_VeDM3ZH0P4no5xk0JZ"
+      }]
+    },
+    {
+      "id": 63,
+      "name": "अंतरधर्मी विवाह",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1ESNS-946aCK3clYwmmTQRKK6hUWpPZAX"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1hXkebE4-7WBSIqpd268fTm4DU42LAqh-"
+      }]
+    },
+    {
+      "id": 65,
+      "name": "एम् बी पी",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "summary",
+        "link": "https://drive.google.com/uc?export=view&id=1h2M8jR82TFWwZgpiIiN7QkdePXX2bbW6"
+      },{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=1Jl4GIGQJld6ggvgpTPyCHmA6LsoKmgmD"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1kfE91aIragrdKtRIbEKO4PfeoRczNpVt"
+      }]
+    },
+    {
+      "id": 68,
+      "name": "वोटवापसी राज्य स्वास्थ्य मंत्री",
+      "intro":"",
+      "pdfLinks":[{
+        "linkname" : "fulldraft",
+        "link": "https://drive.google.com/uc?export=view&id=148bSU9gerfjKA049UMRnBTfgVdAYI0B0"
+      },{
+        "linkname" : "mobile",
+        "link": "https://drive.google.com/uc?export=view&id=1hu3xYW9MRx-VQhL6yIc3B2sqn45HmYAg"
+      }]
+    }
+  ]

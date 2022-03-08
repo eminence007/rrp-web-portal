@@ -3,131 +3,28 @@ import {
   Container,
   Row,
   Col,
-  Card,
-  DropdownButton,
-  Dropdown,
+  Card
 } from 'react-bootstrap';
+import DropsownList from './DropdownList';
 import classes from './DraftGrid.module.css'
-
+const draftdata = require('./draftdata.json')
 function DraftGrid() {
   return (
     <>
       <Container>
         <Row>
-          <Col xs={12} md={6} lg={4} className={classes['row-gap']}>
+          {draftdata.map(draft => <Col xs={12} md={6} lg={4} className={classes['row-gap']}>
             <Card>
               <Card.Body>
-                <Card.Title>JuryCourt</Card.Title>
+                <Card.Title>{draft.name}</Card.Title>
                 <Card.Text>
-                  A law to improve courts and police stations.
+                  Summery
                 </Card.Text>
-                <DropdownButton variant="secondary" title="Download">
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </DropdownButton>
+                <DropsownList items={draft.pdfLinks} />
               </Card.Body>
             </Card>
-          </Col>
-          <Col xs={12} md={6} lg={4} className={classes['row-gap']} >
-            <Card>
-              <Card.Body>
-                <Card.Title>JuryCourt</Card.Title>
-                <Card.Text>
-                  A law to improve courts and police stations.
-                </Card.Text>
-                <DropdownButton variant="secondary" title="Download">
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </DropdownButton>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={6} lg={4} className={classes['row-gap']}>
-            <Card>
-              <Card.Body>
-                <Card.Title>JuryCourt</Card.Title>
-                <Card.Text>
-                  A law to improve courts and police stations.
-                </Card.Text>
-                <DropdownButton variant="secondary" title="Download">
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </DropdownButton>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={6} lg={4} className={classes['row-gap']}>
-            <Card>
-              <Card.Body>
-                <Card.Title>JuryCourt</Card.Title>
-                <Card.Text>
-                  A law to improve courts and police stations.
-                </Card.Text>
-                <DropdownButton variant="secondary" title="Download">
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </DropdownButton>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={6} lg={4} className={classes['row-gap']}>
-            <Card>
-              <Card.Body>
-                <Card.Title>JuryCourt</Card.Title>
-                <Card.Text>
-                  A law to improve courts and police stations.
-                </Card.Text>
-                <DropdownButton variant="secondary" title="Download">
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </DropdownButton>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col xs={12} md={6} lg={4} className={classes['row-gap']}>
-            <Card>
-              <Card.Body>
-                <Card.Title>JuryCourt</Card.Title>
-                <Card.Text>
-                  A law to improve courts and police stations.
-                </Card.Text>
-                <DropdownButton variant="secondary" title="Download">
-                  <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                  <Dropdown.Item href="#/action-2">
-                    Another action
-                  </Dropdown.Item>
-                  <Dropdown.Item href="#/action-3">
-                    Something else
-                  </Dropdown.Item>
-                </DropdownButton>
-              </Card.Body>
-            </Card>
-          </Col>
+          </Col>)}
+         
         </Row>
       </Container>
     </>
