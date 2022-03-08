@@ -1,3 +1,4 @@
-# react-atkesg
+Application is developed using react 
+ReactBootstrap is used for styling 
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-atkesg)
+Application is deployed at https://rrp-web-app.herokuapp.com/
