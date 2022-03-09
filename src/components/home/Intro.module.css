@@ -1,6 +1,6 @@
 .intro-text{
   text-align: center;
-  font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.85rem);
   margin:auto;
   margin-top: 50px;
   margin-bottom: 60px;
