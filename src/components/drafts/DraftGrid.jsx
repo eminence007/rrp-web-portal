@@ -13,7 +13,7 @@ function DraftGrid() {
     <>
       <Container>
         <Row>
-          {draftdata.map(draft => <Col xs={12} md={6} lg={4} className={classes['row-gap']}>
+          {draftdata.map(draft => <Col xs={12} md={6} lg={4} className={classes['row-gap']} key={draft.id} >
             <Card>
               <Card.Body>
                 <Card.Title>{draft.name}</Card.Title>
