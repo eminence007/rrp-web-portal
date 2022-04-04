@@ -8,6 +8,7 @@ import Articles from './components/pages/Articles'
 import AboutParty from './components/pages/AboutParty'
 import AboutPresident from './components/pages/AboutPresident'
 import AboutMovement from './components/pages/AboutMovement'
+import Signup from './components/pages/Signup'
 import ArticleEditor from './components/editor/ArticleEditor'
 import React from 'react'
 
@@ -40,6 +41,9 @@ function App() {
         </Route>
         <Route exact path="/editor">
             <ArticleEditor/>
+        </Route>
+        <Route exact path="/signup">
+            <Signup/>
         </Route>
 
       </Switch>

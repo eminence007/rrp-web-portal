@@ -18,7 +18,7 @@ function DraftGrid() {
               <Card.Body>
                 <Card.Title>{draft.name}</Card.Title>
                 <Card.Text>
-                  Summery
+                {draft.intro}
                 </Card.Text>
                 <DropsownList items={draft.pdfLinks} />
               </Card.Body>
