@@ -6,6 +6,7 @@
     "@babel/runtime": "^7.15.4",
     "@popperjs/core": "2.10.1",
     "bootstrap": "5.1.1",
+    "interweave": "^13.0.0",
     "markdown-it": "12.2.0",
     "react": "17.0.2",
     "react-bootstrap": "2.0.2",
@@ -23,10 +24,17 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

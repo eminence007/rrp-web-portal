@@ -1,8 +1,9 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 function Movement() {
   return (
-    <>
+    <Container>
       <p>
         <br />
         राईट टू रिकॉल का सामान्य अर्थ है : वोट वापिस लेने का अधिकार होना !!
@@ -579,7 +580,7 @@ function Movement() {
       </p>
 
       <p>&nbsp;</p>
-    </>
+    </Container>
   );
 }
 
