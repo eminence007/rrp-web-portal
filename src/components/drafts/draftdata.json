@@ -5,13 +5,13 @@
       "intro":"देश मे खनिज लूट को रोकने व सभी सरकारी प्राकृतिक संसाधनों को नागरिको की सम्पत्ति बनाने के लिए कानून।",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=19eTAQXUlXG4UgvuDuF5_Vff5yixBpEJo"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/dhanvapsipassbook-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1J_s0SaUlHkqmfeVkR15leuaebtXhehIf"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/dhanvapsipassbook.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1POBtBKtUHfdno_SRbRgWdF_TtbSewC_Y"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/dhanvapsipassbook-mobile.pdf"
       }]
     },
     {
@@ -20,10 +20,10 @@
       "intro":" जीएसटी  समाप्त कर अनुत्पादक भू संपत्ति पर कर लगाने का प्रस्ताव ",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=11NXYrbVmuAv_RJcPSObojfx6ncTPblx-"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/elt-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1E1KIO2u_nrCtzAL6eAWRxknKBNjESnNe"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/elt.pdf"
       }]
     },
     {
@@ -32,13 +32,13 @@
       "intro":"देश मे अदालते,पुलिस,अस्पताल,स्कूलों व अन्य सरकारी विभागों को दुरुस्त करने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=1d0AZaEkoo4kxsBZ3WQJp9dF6evV_4KTG"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1BzikVRT9e7V2A-HxS-Io6LGyOS3oeFLF"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1qsKDrXiY17yOfGHAnNi2-FCmBjBm9gV1"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt-mobile.pdf"
       }]
     },
     {
@@ -47,13 +47,13 @@
       "intro":"राज्य मे अदालते,पुलिस,अस्पताल,स्कूलों व अन्य सरकारी विभागों को दुरुस्त करने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=1LYgc8SRj6TI7zF1-qa82n-oOP858tw-B"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt-state-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1q7WL8gABzjMmu-b00NBKxkPRgqYLYNU3"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt-state.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1sIcSXEt-P1DsgLMHE4PosKUvHZdL1pfP"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt-state-mobile.pdf"
       }]
     },
     {
@@ -62,10 +62,10 @@
       "intro":"जिले मे अदालते,पुलिस,अस्पताल,स्कूलों व अन्य सरकारी विभागों को दुरुस्त करने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1U5o1Cb6AAKpvsvaVckbJqFpQLFa4l0Ix"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt-district.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1XkRVM56xN0DwSX0hGYwoWLOO4sTrKtW8"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurycourt-district-mobile.pdf"
       }]
     },
     {
@@ -74,10 +74,10 @@
       "intro":"देश मे स्वदेशी इकाइयों को बढ़ावा देने व संवेदनशील क्षेत्रो में प्रत्यक्ष विदेशी निवेश को प्रतिबंधित करने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://rrp-web-api.herokuapp.com/pdf/woic"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/woic.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=13X16kyhomOtd_hEdg6RYCVkJtk3OHyZG"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/woic-mobile.pdf"
       }]
     },
     {
@@ -86,10 +86,10 @@
       "intro":"दूरदर्शन का प्रबंधन सुधारने व दूरदर्शन अध्यक्ष पद को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1QM4vVdGJ8-PGV7D1AYRHHQkzXl1XjpNS"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-ddchairman.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1xA-HwsVmgIy7i7kJ6Es7ezlf-HzjPL92"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-ddchairman-mobile.pdf"
       }]
     },
     {
@@ -98,10 +98,10 @@
       "intro":"केंद्रीय मंत्रियों को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1PkTf9hS5UNXmcE62HHbH_YE8SI4h8hDi"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-centralminister.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=19F31D3-l_gckO0iFMs9t_McbT3Ne0v3w"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-centralminister-mobile.pdf"
       }]
     },
     {
@@ -110,10 +110,10 @@
       "intro":"राज्य मंत्रियों को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1AwuKlh-C0ExRh86aSkafGqfX2ETQzNQk"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-stateminister.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1DH9O2L3m-vvGaczQejxZh-Vt9oiub-Wt"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-stateminister-mobile.pdf"
       }]
     },
     {
@@ -122,13 +122,13 @@
       "intro":"हिन्दू मंदिरो को सरकार के नियंत्रण से मुक्त कराकर हिन्दू नागरिको के नियंत्रण में लाने व हिन्दू मंदिरो का प्रबंधन सुधारने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=1JASsMXVTfGXzWYjL7mSrXRcml38QGvWX"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/hinduboard-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1f-OB_xk5MRY-CJ9ZGlf_MwX8iJp6n8If"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/hinduboard.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=16BwrqW8N0hAGEUJb_i8jucMSZJuouCrb"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/hinduboard-mobile.pdf"
       }]
     },
     {
@@ -137,10 +137,10 @@
       "intro":"इस कानून के गज़ट में आने से देसी गायो की हत्या में कमी आएगी और गोवंश का संरक्षण होगा",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=1_HdTmAs79Fk6UZbAs6j1cgW_Sd7bfUBo"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gauniti-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1fChWGEu05gUFklewuzX-CNmwFSht_XSs"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gauniti.pdf"
       }]
     },
     {
@@ -149,13 +149,13 @@
       "intro":"ग्राम पंचायतों में जूरी प्रक्रिया लागू करने और स्थानीय अधिकारियों को जनता के प्रति जवाबदेह बनाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=14c_WUjNse_QJcmcFutYYQ9_Tu6putIen"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurypanchayat-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1b6IgR0YfJCLItuIqErTXNpLuOQ6fDNVj"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurypanchayat.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1OgXdj-wD4L2soguqoIP7HC5qicwsmt3v"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/jurypanchayat-mobile.pdf"
       }]
     },
     {
@@ -164,10 +164,10 @@
       "intro":"जनसंख्या नियंत्रण और धार्मिक जनसंख्या संतुलन के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1w3CyQRkkzrGi39KLzt5ZnqpF4_-hSaa-"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/twochildlaw.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=11C4jAfohVVRC5ODO_ZXWM-fJ0ZwFXkFZ"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/twochildlaw-mobile.pdf"
       }]
     },
     {
@@ -176,10 +176,10 @@
       "intro":"घुसपैठियों को देश से खदेड़ने और शरणार्थियों को शरण देने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1D6qa-GestzGaaS5AJRM5VGi_1qnAvX5G"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/nrci.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1dXrleFV38p-JV4NfF2o9gDybygI1h7Er"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/nrci-mobile.pdf"
       }]
     },
     {
@@ -188,10 +188,10 @@
       "intro":"सज्जन निरपराध नागरिको को सिर्फ पंजीकरण के साथ बंदूक रखना अनिवार्य करने पर जनमत संग्रह कराने का कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1sCZTDrBl08uTYez56fHgYl9OoQRXt2iI"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gunlaw.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1pQR_9K-aEB4snAYSukK5ae0GAAXm2xBR"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gunlaw-mobile.pdf"
       }]
     },
     {
@@ -200,10 +200,10 @@
       "intro":"राज्य में सज्जन निरपराध नागरिको को सिर्फ पंजीकरण के साथ बंदूक रखना अनिवार्य करने पर जनमत संग्रह कराने का कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1ZGEgIvJW4Ya8XfJVM9pjJDPyX_CtQj2p"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gunlaw-state.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1zvTau5HUhSaOmnejf6uOf5VkthbH6ooo"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gunlaw-state-mobile.pdf"
       }]
     },
     {
@@ -212,10 +212,10 @@
       "intro":"जिले में सज्जन निरपराध नागरिको को सिर्फ पंजीकरण के साथ बंदूक रखना अनिवार्य करने पर जनमत संग्रह कराने का कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1IlL0-AUjpeNVoBj9NGsVKRaA3yt-SKN5"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gunlaw-district.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1IUnZuG07uTGsUcUrcmSXCMi1I832bG6R"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/gunlaw-district-mobile.pdf"
       }]
     },
     {
@@ -224,10 +224,10 @@
       "intro":"किसी भी मुद्दे पर आम नागरिकों की राय पारदर्शी प्रक्रिया से जानने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1x2fFkqnFjVuSctUrv0zXRDdSdMUKF1AO"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/tcp.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1k-0LShIgKV2rHf6HOUNYvq_E5ql0_zFA"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/tcp-mobile.pdf"
       }]
     },
     {
@@ -236,10 +236,10 @@
       "intro":"राज्य में किसी भी मुद्दे पर आम नागरिकों की राय पारदर्शी प्रक्रिया से जानने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1lRuNCqIfkO3w0KvN_eUB3Pn1rRsC0jlG"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/tcp-state.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1bouiqvi9kvNlpKGE8DAAuXlLj0SRI1DR"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/tcp-state-mobile.pdf"
       }]
     },
     {
@@ -248,10 +248,10 @@
       "intro":"जिले में किसी भी मुद्दे पर आम नागरिकों की राय पारदर्शी प्रक्रिया से जानने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1LvQPhuZXZkKpy_eX1DTSYeZH2lyWC0jj"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/tcp-district.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1GDGtkLrg95CQJy-tfJbkjuUM5B7-Sal_"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/tcp-district-mobile.pdf"
       }]
     },
     {
@@ -260,22 +260,22 @@
       "intro":"सांसद व विधायक पद को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=11JENQUqAcwJkpPq0KzUPpSRhb8JANgpM"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-mpmla-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1-aRKn0YicY6xKfYkgyBSXpOAqe_w5mhp"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-mpmla.pdf"
       }]
     },
     {
       "id": 48,
-      "name": "जिला रेडो",
+      "name": "रेडो",
       "intro":"यह कानून जिला अधिकारियों व प्रतिनिधियों को जनता के प्रति जवाबदेह बनाता है व जिले के सरकारी स्कूलों,अस्पतालों, थानों और अदालतों की हालत सुधारता हैं",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1v82Dg5usSq1vQH4Z0jOKE9kUGqXHKNrp"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/redo.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1xTWBtv4UgeTV9H9zksm5jCir-6kPBfhJ"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/redo-mobile.pdf"
       }]
     },
     {
@@ -284,10 +284,10 @@
       "intro":"यह कानून सरकारी बैंकों,मीडिया,स्कूलों, अस्पतालों, थानों और अदालतों को सुधारता हैं",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1lOrGsf_IFagtPRjAcS0JnniZLXZTRVFz"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/rego.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1tv8V_bAIlc7L-YtzvrRAOYm7ZL_YPWZs"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/rego-mobile.pdf"
       }]
     },
     {
@@ -296,10 +296,10 @@
       "intro":"राज्य के मुख्यमंत्री पद को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1MQ__7m_JlM63TQYe8LieDOI0y3bdnPEu"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-cm.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1Fmn63mnonlelTEEJnw4n9eDK9ZVfK1kn"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-cm-mobile.pdf"
       }]
     },
     {
@@ -308,10 +308,10 @@
       "intro":"प्रधानमंत्री पद को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1ozTAry6NwNPM5Cdxvubou9x0VXmlKHtn"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-pm.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1DE4SfuWAvR9kAA9qX1aX8y6r1K9PuIec"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-pm-mobile.pdf"
       }]
     },
     {
@@ -320,10 +320,10 @@
       "intro":"इतिहास की पुस्तकों के पुनरीक्षण के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=19cJXdIJIyUOuMot5NNLJKKIGxXgxyFDd"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/historycorrection.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1qTqEbXwEG0DT2Cz8Wdcli9hRqi1chfZ8"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/historycorrection-mobile.pdf"
       }]
     },
     {
@@ -332,10 +332,10 @@
       "intro":"यह कानून आरक्षित वर्ग की सहमति से आरक्षण को कम करता है",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1wwFOcUJV0pac3ud8uAygDfPG9Lt9myff"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/modifiedreservation.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1tOo8dP2TWH2ibvgPjTUF7R8xwDGxsuvg"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/modifiedreservation-mobile.pdf"
       }]
     },
     {
@@ -344,13 +344,13 @@
       "intro":"सरपंच पद को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=1BODPTIzdLZ8bHH0pA9n-h5mEdkDdqcFX"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-sarpanch-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1dgSK9icpze8Cemx3qPrFqSryRp5q-tMt"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-sarpanch.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1rCBvU4fb7lE9D_VeDM3ZH0P4no5xk0JZ"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-sarpanch-mobile.pdf"
       }]
     },
     {
@@ -359,10 +359,10 @@
       "intro":"अन्तर्धार्मि विवाह में महिला को विवाहोपरांत भी मैरिज एक्ट चुनने का अधिकार देने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1ESNS-946aCK3clYwmmTQRKK6hUWpPZAX"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/marriedwomenproction.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1hXkebE4-7WBSIqpd268fTm4DU42LAqh-"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/marriedwomenprotection-mobile.pdf"
       }]
     },
     {
@@ -371,13 +371,13 @@
       "intro":"किसानों को उनकी फसल का उचित मूल्य दिलाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "summary",
-        "link": "https://drive.google.com/uc?export=view&id=1h2M8jR82TFWwZgpiIiN7QkdePXX2bbW6"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/mbp-summary.pdf"
       },{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=1Jl4GIGQJld6ggvgpTPyCHmA6LsoKmgmD"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/mbp.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1kfE91aIragrdKtRIbEKO4PfeoRczNpVt"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/mbp-mobile.pdf"
       }]
     },
     {
@@ -386,10 +386,10 @@
       "intro":"राज्य स्वास्थ्य मंत्री पद को वोटवापसी पासबुक के दायरे में लाने के लिए कानून",
       "pdfLinks":[{
         "linkname" : "fulldraft",
-        "link": "https://drive.google.com/uc?export=view&id=148bSU9gerfjKA049UMRnBTfgVdAYI0B0"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-healthminister.pdf"
       },{
         "linkname" : "mobile",
-        "link": "https://drive.google.com/uc?export=view&id=1hu3xYW9MRx-VQhL6yIc3B2sqn45HmYAg"
+        "link": "https://rrp-web-api.herokuapp.com/pdf/votevapsi-healthminister-mobile.pdf"
       }]
     }
   ]
