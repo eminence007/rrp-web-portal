@@ -5,7 +5,7 @@ import {
   Col,
   Card
 } from 'react-bootstrap';
-import DropsownList from './DropdownList';
+import DropdownList from '../ui/DropdownList';
 import classes from './DraftGrid.module.css'
 const draftdata = require('./draftdata.json')
 function DraftGrid() {
@@ -20,7 +20,11 @@ function DraftGrid() {
                 <Card.Text>
                 {draft.intro}
                 </Card.Text>
-                <DropsownList items={draft.pdfLinks} />
+                <div className="d-grid gap-2">
+                <DropdownList items={draft.pdfLinks} />
+                <DropdownList items={draft.pdfLinks} />
+                <DropdownList items={draft.pdfLinks} />
+                </div>
               </Card.Body>
             </Card>
           </Col>)}

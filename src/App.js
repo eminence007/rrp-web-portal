@@ -11,6 +11,9 @@ import AboutMovement from './components/pages/AboutMovement'
 import Signup from './components/pages/Signup'
 import ArticleEditor from './components/editor/ArticleEditor'
 import React from 'react'
+import ArticleCapsule from './components/ui/ArticleCapsule';
+import ProfileCard from './components/ui/ProfileCard';
+import ImageCropBtn from './components/ui/ImageCropBtn';
 
 function App() {
   return (
@@ -44,6 +47,15 @@ function App() {
         </Route>
         <Route exact path="/signup">
             <Signup/>
+        </Route>
+        <Route exact path="/dhanvapsi-passbook">
+            <ArticleCapsule/>
+        </Route>
+        <Route exact path="/profile">
+            <ProfileCard/>
+        </Route>
+        <Route exact path="/imagecrop">
+            <ImageCropBtn/>
         </Route>
 
       </Switch>

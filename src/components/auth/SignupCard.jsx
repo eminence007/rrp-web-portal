@@ -23,12 +23,6 @@ const SignupCard = () => {
           <Card>
             <Card.Body>
               <Form>
-                <Form.Group className="mb-3" controlId="name">
-                  <Form.Control
-                    type="text"
-                    placeholder="Enter name on voter card"
-                  />
-                </Form.Group>
                 <Form.Group className="mb-3" controlId="voterid">
                   <Form.Control type="text" placeholder="Enter voterid" />
                 </Form.Group>

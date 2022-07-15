@@ -1,21 +1,33 @@
-import React, { useEffect,useState } from "react";
-import { Markup } from 'interweave';
-import { Container } from "react-bootstrap";
-import MarkdownIt from "markdown-it";
-const mdParser = new MarkdownIt();
+import React, { useEffect, useState } from "react";
+import { Container, Card, Button } from "react-bootstrap";
+import parse from "html-react-parser";
+
 
 
 function President() {
   const [content, setContent] = useState("");
+
   useEffect(() => {
-    fetch("https://rrp-web-api.herokuapp.com/pdf/samplemarkdown")
-      .then((response) => response.text())
-      .then((text) => setContent(mdParser.render(text)));
+    initializeContent();
   }, []);
 
-  return <Container className="my-5">
-    <Markup content={content}/>
-  </Container>;
+  const initializeContent = async () => {
+    fetch("https://rrp-web-api.herokuapp.com/pdf/samplemarkdown.html")
+      .then((res) => res.text())
+      .then((rescontent) => setContent(parse(rescontent)));
+  };
+
+  return (
+    <Container className="my-5">
+      <Card>
+        <Card.Header className="d-flex justify-content-end">
+          <Button size="sm" font>Download</Button>
+         
+        </Card.Header>
+        <Card.Body>{content}</Card.Body>
+      </Card>
+    </Container>
+  );
 }
 
 export default President;

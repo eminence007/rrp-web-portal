@@ -7,7 +7,7 @@ import  './Slider.css'
 function Slider() {
     return (
 
-        <Carousel className='carousel rounded' nextLabel={null} prevLabel={null} fade={true } interval={3000}>
+        <Carousel className='carousel rounded mx-5' nextLabel={null} prevLabel={null} fade={true } interval={3000}>
         <Carousel.Item>
           <img
             className="d-block w-100"
