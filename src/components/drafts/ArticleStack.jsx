@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import FadeLoader from "react-spinners/FadeLoader";
 import {
   Container,
   Row,
@@ -13,12 +14,19 @@ import { Link } from "react-router-dom";
 function ArticleStack() {
   const [articleData, setArticleData] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  const loaderStyle = {
+    display: "block",
+    margin: "25vh auto",
+    borderColor: "red",
+  };
 
   useEffect(() => {
     initializeContent();
   }, []);
 
   const initializeContent = async () => {
+    setIsLoading(true)
     fetch("https://rrp-web-api.herokuapp.com/article")
       .then((res) => res.json())
       .then((articles) => setArticleData(articles))
@@ -26,8 +34,10 @@ function ArticleStack() {
         console.log(error);
         return [];
       });
+      setIsLoading(false)
   };
   const handleSearch = async () => {
+    setIsLoading(true)
     if (searchText !== "") {
       fetch(`https://rrp-web-api.herokuapp.com/article?searchText=${searchText}`)
         .then((res) => res.json())
@@ -37,6 +47,7 @@ function ArticleStack() {
           return [];
         });
     }
+    setIsLoading(false)
   };
 
   const copyUrl = async (e) => {
@@ -53,7 +64,7 @@ function ArticleStack() {
             className="mx-1"
             aria-label="Search"
             value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
+            onChange={(e) => setSearchText(e.target.value.toLowerCase())}
           />
           <Button variant="outline-success" onClick={handleSearch}>
             Search
@@ -64,7 +75,8 @@ function ArticleStack() {
         <Container>
           <Row>
             <Col lg={9} className=" m-auto">
-              {articleData
+            {isLoading && <FadeLoader cssOverride={loaderStyle} />}
+              {(!isLoading && articleData)
                 ? articleData.map((article) => (
                     <Card className="my-3" key={article.id}>
                       <Card.Body>
