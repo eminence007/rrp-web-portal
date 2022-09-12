@@ -3,14 +3,16 @@ import { Container, Card, Button } from "react-bootstrap";
 import parse from "html-react-parser";
 import { useFetch } from "use-http";
 import FadeLoader from "react-spinners/FadeLoader";
+import { useParams } from "react-router-dom";
 
 
-const ArticleCapsule = (props) => {
+const Article = () => {
+  const {articleuri} = useParams()
   const [content, setContent] = useState("");
-  const { get, loading, error } = useFetch('https://rrp-web-api.herokuapp.com/pdf/')
-  const override = {
+  const { get, loading, error } = useFetch('https://rrp-web-api.herokuapp.com/article/content')
+  const loaderStyle = {
     display: "block",
-    margin: "0 auto",
+    margin: "25vh auto",
     borderColor: "red",
   };
   useEffect(() => {
@@ -18,15 +20,15 @@ const ArticleCapsule = (props) => {
   }, []);
 
   const initializeContent = async () => {
-    const res = await get("samplemarkdown.html")
+    const res = await get(articleuri)
     setContent(parse(res))
   };
 
   return (
-    <Container className="my-5">
+      <>
       {error && 'Error'}
-      {loading && <FadeLoader cssOverride={override} />}
-      {!error && !loading ?<Card>
+      {loading && <FadeLoader cssOverride={loaderStyle} />}
+      {!error && !loading ? <Container className="my-5"> <Card>
        <Card.Header className="d-flex justify-content-end">
           <Button size="sm" font>
             Download
@@ -35,9 +37,10 @@ const ArticleCapsule = (props) => {
         <Card.Body>
      
        {content}</Card.Body>
-      </Card>:''}
-    </Container>
+      </Card>
+    </Container>:''}
+    </>
   );
 };
 
-export default ArticleCapsule;
+export default Article;

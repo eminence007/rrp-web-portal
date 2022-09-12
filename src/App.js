@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/layouts/Layout';
 import Home from './components/pages/Home'
@@ -11,7 +11,7 @@ import AboutMovement from './components/pages/AboutMovement'
 import Signup from './components/pages/Signup'
 import ArticleEditor from './components/editor/ArticleEditor'
 import React from 'react'
-import ArticleCapsule from './components/ui/ArticleCapsule';
+import Article from './components/ui/Article';
 import ProfileCard from './components/ui/ProfileCard';
 import ImageCropBtn from './components/ui/ImageCropBtn';
 
@@ -20,7 +20,7 @@ function App() {
     
     <Router>
      <Layout>
-      <Switch>
+    
         <Route exact path="/home">
             <Home/>
         </Route>
@@ -48,8 +48,8 @@ function App() {
         <Route exact path="/signup">
             <Signup/>
         </Route>
-        <Route exact path="/dhanvapsi-passbook">
-            <ArticleCapsule/>
+        <Route exact path="/articles/:articleuri">
+            <Article/>
         </Route>
         <Route exact path="/profile">
             <ProfileCard/>
@@ -58,7 +58,7 @@ function App() {
             <ImageCropBtn/>
         </Route>
 
-      </Switch>
+   
       </Layout> 
       
     </Router>
