@@ -21,15 +21,15 @@ function TopNav() {
           <Nav className="me-auto">
             <NavDropdown title="दस्तावेज़" id="collasible-nav-dropdown">
               <NavDropdown.Item  as={Link} to="/drafts">ड्राफ्ट</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/articles">सामग्री</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/faq">सामान्य प्रश्न</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/articles">लेख</NavDropdown.Item>
+              {/* <NavDropdown.Item as={Link} to="/faq">सामान्य प्रश्न</NavDropdown.Item> */}
               
             </NavDropdown>
-            <NavDropdown title="गतिविधियों" id="collasible-nav-dropdown">
+            {/* <NavDropdown title="गतिविधियों" id="collasible-nav-dropdown">
               <NavDropdown.Item  as={Link} to="/elections">चुनाव</NavDropdown.Item>
               <NavDropdown.Item  as={Link} to="/meetings">बैठकों</NavDropdown.Item>
               <NavDropdown.Item  as={Link} to="/citizen-duty-day">नागरिक कर्तव्य दिवस</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown> */}
             <NavDropdown title="हमारे बारे में" id="collasible-nav-dropdown">
               <NavDropdown.Item  as={Link} to="/about-movement">आंदोलन</NavDropdown.Item>
               <NavDropdown.Item  as={Link} to="/about-party">पार्टी</NavDropdown.Item>
