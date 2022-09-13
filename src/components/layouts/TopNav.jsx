@@ -18,7 +18,7 @@ function TopNav() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto" collapseOnSelect={true}>
+          <Nav className="me-auto">
             <NavDropdown title="दस्तावेज़" id="collasible-nav-dropdown">
               <NavDropdown.Item  as={Link} to="/drafts">ड्राफ्ट</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/articles">लेख</NavDropdown.Item>

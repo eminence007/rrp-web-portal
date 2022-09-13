@@ -54,7 +54,11 @@ function ArticleStack() {
     }
     setIsLoading(false);
   };
-
+  const tagList = [
+    ...new Set(
+      articleData.map((article) => article.tags).flatMap((tag) => tag)
+    ),
+  ];
   const copyUrl = async (e) => {
     console.log(e.target.value);
     return await navigator.clipboard.writeText(
@@ -72,9 +76,17 @@ function ArticleStack() {
             aria-label="खोजें"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value.toLowerCase())}
+            list="list-timezone"
           />
-          <Button variant="outline-success" onClick={handleSearch} className='mx-1'>
-          खोजें
+          <datalist id="list-timezone">
+            {tagList && tagList.map((tag) => <option>{tag}</option>)}
+          </datalist>
+          <Button
+            variant="outline-success"
+            onClick={handleSearch}
+            className="mx-1"
+          >
+            खोजें
           </Button>
         </Form>
       </Card.Header>
