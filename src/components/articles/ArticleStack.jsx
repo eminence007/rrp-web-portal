@@ -79,7 +79,7 @@ function ArticleStack() {
             list="list-timezone"
           />
           <datalist id="list-timezone">
-            {tagList && tagList.map((tag) => <option>{tag}</option>)}
+            {tagList && tagList.map((tag) => <option key={tag}>{tag}</option>)}
           </datalist>
           <Button
             variant="outline-success"
