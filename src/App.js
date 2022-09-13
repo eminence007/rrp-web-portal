@@ -11,7 +11,7 @@ import AboutMovement from './components/pages/AboutMovement'
 import Signup from './components/pages/Signup'
 import ArticleEditor from './components/editor/ArticleEditor'
 import React from 'react'
-import Article from './components/ui/Article';
+import Article from './components/articles/Article';
 import ProfileCard from './components/ui/ProfileCard';
 import ImageCropBtn from './components/ui/ImageCropBtn';
 

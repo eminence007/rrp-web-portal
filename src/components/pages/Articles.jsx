@@ -1,5 +1,5 @@
 import React from 'react'
-import ArticleStack from '../drafts/ArticleStack'
+import ArticleStack from '../articles/ArticleStack'
 
 function Articles() {
     return (
