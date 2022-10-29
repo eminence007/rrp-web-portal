@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Card, Button } from "react-bootstrap";
 import parse from "html-react-parser";
+import {apiBaseUrl} from "../../configs/envconst.config"
 
 
 
@@ -12,7 +13,7 @@ function President() {
   }, []);
 
   const initializeContent = async () => {
-    fetch("https://rrp-web-api.herokuapp.com/pdf/samplemarkdown.html")
+    fetch(`${apiBaseUrl}/pdf/samplemarkdown.html`)
       .then((res) => res.text())
       .then((rescontent) => setContent(parse(rescontent)));
   };

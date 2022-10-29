@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import MarkdownIt from "markdown-it";
 import MdEditor from "react-markdown-editor-lite";
 import "react-markdown-editor-lite/lib/index.css";
+import { apiBaseUrl } from "../../configs/envconst.config";
 const mdParser = new MarkdownIt();
 const ArticleEditor = (props) => {
   const [articleText, setArticleText] = useState("");
@@ -17,7 +18,7 @@ const ArticleEditor = (props) => {
 
     formData.append("profilePhoto", articlefile);
 
-    fetch("https://rrp-web-api.herokuapp.com/user/photoUpload", {
+    fetch(`${apiBaseUrl}/user/photoUpload`, {
       method: "POST",
       body: formData
     })

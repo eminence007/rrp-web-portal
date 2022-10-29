@@ -10,7 +10,7 @@ import {
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer mt-5">
       <div className="social-icon">
         <div className="icon">
           <FaFacebook />{" "}

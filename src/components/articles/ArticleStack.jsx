@@ -10,11 +10,17 @@ import {
   Pagination,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import {apiBaseUrl} from "../../configs/envconst.config"
 
+let firstLoad = true;
 function ArticleStack() {
   const [articleData, setArticleData] = useState([]);
+  const [prevSearchText, setPrevSearchText] = useState("");
   const [searchText, setSearchText] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [tagList, setTagList] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPageCount, setTotalPageCount] = useState(1);
   const loaderStyle = {
     display: "block",
     margin: "25vh auto",
@@ -25,40 +31,60 @@ function ArticleStack() {
     initializeContent();
   }, []);
 
-  const initializeContent = async () => {
-    setIsLoading(true);
+  const findArticles = async (searchText='', pageNumber=1, articlesPerPage=4) => {
     try {
-      const res = await fetch("https://rrp-web-api.herokuapp.com/article");
-      const articles = await res.json();
+      let url =`${apiBaseUrl}/article?searchText=${searchText}&pageNumber=${pageNumber}&articlesPerPage=${articlesPerPage}`
+      const res = await fetch(url);
+      const articlePage = await res.json();
+      const articles =  articlePage.articles;
+      setTotalPageCount(articlePage.totalPageCount) 
       setArticleData(articles);
+      if(firstLoad&& articles ){
+        setTagList([
+          ...new Set(
+            articles.map((article) => article.tags).flatMap((tag) => tag)
+          ),
+        ])
+      }
+      
     } catch (error) {
       console.error(error);
       setArticleData([]);
     }
+  }
+  const initializeContent = async () => {
+    setIsLoading(true);
+     await findArticles();
+  
+      
+     firstLoad=false;
 
     setIsLoading(false);
   };
+   
+
   const handleSearch = async () => {
     setIsLoading(true);
-    if (searchText !== "") {
-      try {
-        const res = await fetch(
-          `https://rrp-web-api.herokuapp.com/article?searchText=${searchText}`
-        );
-        const articles = await res.json();
-        setArticleData(articles);
-      } catch (error) {
-        console.error(error);
-        setArticleData([]);
-      }
+    setCurrentPage(1)
+    if (searchText !== prevSearchText) {
+      setPrevSearchText(searchText)
+      await findArticles(searchText,1)
     }
     setIsLoading(false);
   };
-  const tagList = [
-    ...new Set(
-      articleData.map((article) => article.tags).flatMap((tag) => tag)
-    ),
-  ];
+   const handlePrevPage =async () => {
+    setIsLoading(true);
+    setCurrentPage(prevCurrentPage => prevCurrentPage-1 )
+    await findArticles(searchText,currentPage)
+    setIsLoading(false);
+   }
+   const handleNextPage =async () => {
+    setIsLoading(true);
+    setCurrentPage(prevCurrentPage => prevCurrentPage+1 )
+    await findArticles(searchText,currentPage)
+    setIsLoading(false);
+   }
+
   const copyUrl = async (e) => {
     console.log(e.target.value);
     return await navigator.clipboard.writeText(
@@ -76,15 +102,17 @@ function ArticleStack() {
             aria-label="खोजें"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value.toLowerCase())}
-            list="list-timezone"
+            list="list-tag"
+            disabled={isLoading}
           />
-          <datalist id="list-timezone">
+          <datalist id="list-tag">
             {tagList && tagList.map((tag) => <option key={tag}>{tag}</option>)}
           </datalist>
           <Button
             variant="outline-success"
             onClick={handleSearch}
             className="mx-1"
+            disabled={isLoading}
           >
             खोजें
           </Button>
@@ -95,7 +123,7 @@ function ArticleStack() {
           <Row>
             <Col lg={9} className=" m-auto">
               {isLoading && <FadeLoader cssOverride={loaderStyle} />}
-              {articleData
+              {!isLoading && articleData
                 ? articleData.map((article) => (
                     <Card className="my-3" key={article.id}>
                       <Card.Body>
@@ -118,18 +146,18 @@ function ArticleStack() {
                       </Card.Body>
                     </Card>
                   ))
-                : "Error in loading data"}
+                : ""}
             </Col>
           </Row>
         </Container>
       </Card.Body>
-      <Card.Footer className="d-flex justify-content-end">
-        <Pagination>
-          <Pagination.Prev />
-          <Pagination.Item>{1}</Pagination.Item>
-          <Pagination.Next />
+      {!isLoading && articleData.length>0 && <Card.Footer className="d-flex justify-content-end" >
+       <Pagination >
+          <Pagination.Prev disabled={currentPage===1} onClick={handlePrevPage}/>
+          <Pagination.Item>{`${currentPage } of ${totalPageCount}`}</Pagination.Item>
+          <Pagination.Next disabled={currentPage===totalPageCount} onClick={handleNextPage}/>
         </Pagination>
-      </Card.Footer>
+      </Card.Footer>}
     </Card>
   );
 }

@@ -2,10 +2,9 @@ import React, { useState, useRef, useCallback } from "react";
 import { Modal, Button, Form, Stack } from "react-bootstrap";
 import Cropper from "react-easy-crop";
 import { AiOutlineRotateRight } from "react-icons/ai";
-import {FiUpload} from "react-icons/fi"
-import {getCroppedImg} from '../../utils/canvasUtil'
-import "./ImageCropBtn.css"
-
+import { FiUpload } from "react-icons/fi";
+import { getCroppedImg } from "../../utils/canvasUtil";
+import "./ImageCropBtn.css";
 
 const readFile = (file) => {
   return new Promise((resolve) => {
@@ -14,7 +13,7 @@ const readFile = (file) => {
     reader.readAsDataURL(file);
   });
 };
-const ImageCropBtn = () => {
+const ImageCropBtn = (props) => {
   const containerheight = "100%";
   const style = {
     containerStyle: {
@@ -34,33 +33,29 @@ const ImageCropBtn = () => {
   const [crop, setCrop] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
   const [croppedAreaPixels, setCroppedAreaPixels] = useState(null);
-  const [rotation, setRotation] = useState(0)
-  const [croppedImage, setCroppedImage] = useState(null)
+  const [rotation, setRotation] = useState(0);
 
-  const handleCropComplete = useCallback((croppedAreaPixels) => {
+
+  const handleCropComplete = useCallback((croppedArea, croppedAreaPixels) => {
     setCroppedAreaPixels(croppedAreaPixels)
   }, [])
 
-  const showCroppedImage = useCallback(async () => {
+  const handleSave = useCallback(async () => {
     try {
-      const croppedImage = await getCroppedImg(
+      const croppedPic = await getCroppedImg(
         imageFile,
         croppedAreaPixels,
         rotation
-      )
-      console.log('donee', { croppedImage })
-      setCroppedImage(croppedImage)
+      );
+      props.onSave(croppedPic);
+      setShowModal(false);
     } catch (e) {
-      console.error(e)
+      console.error(e);
     }
-  }, [croppedAreaPixels, rotation])
-
+  }, [croppedAreaPixels, rotation]);
 
   const handleClose = () => setShowModal(false);
-  const handleSave = () => {
-    showCroppedImage()
-    setShowModal(false)
-  }
+
   const handleShow = () => setShowModal(true);
 
   const handleFileChange = async (e) => {
@@ -72,12 +67,27 @@ const ImageCropBtn = () => {
     }
   };
   const handleRotation = () => {
-     setRotation(prevRotation => prevRotation+90)
-  }
+    setRotation((prevRotation) => prevRotation + 90);
+  };
   return (
     <>
-      <Button variant="primary" onClick={() => inputRef.current.click()} className='d-flex align-items-center'>
-        <FiUpload/>
+      <Button
+        variant="secondary"
+        onClick={() => {
+          inputRef.current.click();
+        }}
+        className="d-flex align-items-center"
+      >
+        <FiUpload
+          className="mx-auto"
+          onChange={() => {
+            setCrop({ x: 0, y: 0 });
+            setZoom(1);
+            setCroppedAreaPixels(null);
+            setRotation(0);
+            setImageFile(null);
+          }}
+        />
       </Button>
       <input
         ref={inputRef}
@@ -102,7 +112,7 @@ const ImageCropBtn = () => {
             onCropChange={setCrop}
             onCropComplete={handleCropComplete}
             onZoomChange={setZoom}
-            style={style}
+           // style={style}
             restrictPosition={false}
           />
         </Modal.Body>
@@ -110,10 +120,10 @@ const ImageCropBtn = () => {
           <Stack gap={3}>
             <Form.Range
               value={zoom}
-              min={0.5}
-              max={1.5}
+              min={0.75}
+              max={1.25}
               step={0.01}
-              onChange={(e) => setZoom(e.target.value)}
+              onChange={(e) => setZoom((zoom)=>e.target.value)}
             />
             <Button variant="light" block onClick={handleRotation}>
               <AiOutlineRotateRight size="1.5rem" />
@@ -124,7 +134,6 @@ const ImageCropBtn = () => {
           </Stack>
         </Modal.Footer>
       </Modal>
-      <img src={croppedImage} alt="rrp member"/>
     </>
   );
 };

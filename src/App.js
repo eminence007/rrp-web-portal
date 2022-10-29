@@ -14,6 +14,10 @@ import React from 'react'
 import Article from './components/articles/Article';
 import ProfileCard from './components/ui/ProfileCard';
 import ImageCropBtn from './components/ui/ImageCropBtn';
+import LoginCard from './components/auth/LoginCard';
+import VoterInfoForm from './components/induction/VoterInfoForm';
+import ElectionQuestionForm from './components/induction/ElectionQuestionForm';
+import ProfilePicUploader from './components/induction/ProfilePicUploader';
 
 function App() {
   return (
@@ -47,6 +51,9 @@ function App() {
         </Route>
         <Route exact path="/signup">
             <Signup/>
+        </Route>
+        <Route exact path="/login">
+            <ProfilePicUploader/>
         </Route>
         <Route exact path="/articles/:articleuri">
             <Article/>

@@ -37,6 +37,7 @@ export async function getCroppedImg(
   const image = await createImage(imageSrc)
   const canvas = document.createElement('canvas')
   const ctx = canvas.getContext('2d')
+ 
 
   if (!ctx) {
     return null
@@ -72,7 +73,7 @@ export async function getCroppedImg(
     pixelCrop.width,
     pixelCrop.height
   )
-
+ 
   // set canvas width to final desired crop size - this will clear existing context
   canvas.width = pixelCrop.width
   canvas.height = pixelCrop.height
@@ -87,7 +88,7 @@ export async function getCroppedImg(
   return new Promise((resolve, reject) => {
     canvas.toBlob((file) => {
       resolve(URL.createObjectURL(file))
-    }, 'image/jpeg')
+    }, 'image/png')
   })
 }
 
@@ -95,6 +96,7 @@ export async function getRotatedImage(imageSrc, rotation = 0) {
   const image = await createImage(imageSrc)
   const canvas = document.createElement('canvas')
   const ctx = canvas.getContext('2d')
+  ctx.fillStyle = "white";
 
   const orientationChanged =
     rotation === 90 || rotation === -90 || rotation === 270 || rotation === -270
@@ -110,6 +112,12 @@ export async function getRotatedImage(imageSrc, rotation = 0) {
   ctx.rotate((rotation * Math.PI) / 180)
   ctx.drawImage(image, -image.width / 2, -image.height / 2)
 
+  const croppedImg =  await new Promise((resolve) => {
+    canvas.toBlob((file) => {
+      resolve(URL.createObjectURL(file))
+    }, 'image/png')
+  })
+  ctx.drawImage(croppedImg, 0, 0,354,376)
   return new Promise((resolve) => {
     canvas.toBlob((file) => {
       resolve(URL.createObjectURL(file))

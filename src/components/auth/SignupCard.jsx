@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Card,
   Container,
@@ -9,13 +9,16 @@ import {
   ButtonGroup,
 } from "react-bootstrap";
 
-const handleClick =()=>{
+const handleClick = () => {
   fetch(
     "https://www.googleapis.com/drive/v2/files/1LAQxES9mXlJMY22kD5Z5aQ3tk2nMd6Fm"
-  ).then((res) => res.text()).then(data=>console.log(data));
-}
+  )
+    .then((res) => res.text())
+    .then((data) => console.log(data));
+};
 
 const SignupCard = () => {
+  const [voterid, setVoterid] = useState("");
   return (
     <Container className="my-5">
       <Row>
@@ -24,7 +27,16 @@ const SignupCard = () => {
             <Card.Body>
               <Form>
                 <Form.Group className="mb-3" controlId="voterid">
-                  <Form.Control type="text" placeholder="Enter voterid" />
+                  <Form.Control
+                    type="text"
+                    placeholder="Enter voterid"
+                    value={voterid}
+                    onChange={(e) => {
+                      let value = e.target.value;
+                      value = value.replace(/[^A-Za-z0-9]/gi, "");
+                      setVoterid(value);
+                    }}
+                  />
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label htmlFor="disabledSelect">
@@ -72,7 +84,12 @@ const SignupCard = () => {
                   <Form.Control type="text" placeholder="Enter phone number" />
                 </Form.Group>
                 <ButtonGroup className="d-flex">
-                  <Button variant="primary" type="button" className="btn-block" onClick={handleClick}>
+                  <Button
+                    variant="primary"
+                    type="button"
+                    className="btn-block"
+                    onClick={handleClick}
+                  >
                     Generate OTP
                   </Button>
                 </ButtonGroup>
