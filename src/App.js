@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/layouts/Layout';
 import Home from './components/pages/Home'
@@ -23,8 +23,9 @@ function App() {
   return (
     
     <Router>
+        
      <Layout>
-    
+      <Switch>
         <Route exact path="/home">
             <Home/>
         </Route>
@@ -65,7 +66,7 @@ function App() {
             <ImageCropBtn/>
         </Route>
 
-   
+        </Switch>
       </Layout> 
       
     </Router>
