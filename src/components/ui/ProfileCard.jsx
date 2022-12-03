@@ -30,7 +30,7 @@ const ProfileCard = () => {
                 }}
               >
                 <HiUserGroup value={1} className="my-auto me-1" />
-                <span className="d-none d-sm-block"> Members</span>
+                <span className="d-none d-sm-block"> Members </span>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
