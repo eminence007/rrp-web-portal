@@ -7,25 +7,25 @@ import  './Slider.css'
 function Slider() {
     return (
 
-        <Carousel className='carousel rounded-4 mx-2 my-2' nextLabel={null} prevLabel={null} fade={true } interval={3000}>
+        <Carousel className='carousel rounded-4 mx-2 my-2' nextLabel={null} prevLabel={null} fade={true } interval={2400}>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/724x362/?school"
+            src="https://source.unsplash.com/724x240/?school"
             alt=""
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/724x362/?computer"
+            src="https://source.unsplash.com/724x240/?computer"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/724x362/?books"
+            src="https://source.unsplash.com/724x240/?books"
             alt="Third slide"
           />
         </Carousel.Item>

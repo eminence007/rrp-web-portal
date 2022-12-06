@@ -2,8 +2,8 @@
   text-align: center;
   font-size: clamp(1rem, 2.5vw, 1.85rem);
   margin:auto;
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   width: 85%;
   align-content: center;
 }

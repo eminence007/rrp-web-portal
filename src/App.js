@@ -1,5 +1,6 @@
 import './App.css';
-import { HashRouter as Router, Route,Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route,Switch} from "react-router-dom";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from './components/layouts/Layout';
 import Home from './components/pages/Home'
@@ -18,11 +19,13 @@ import LoginCard from './components/auth/LoginCard';
 import VoterInfoForm from './components/induction/VoterInfoForm';
 import ElectionQuestionForm from './components/induction/ElectionQuestionForm';
 import ProfilePicUploader from './components/induction/ProfilePicUploader';
+import CampeigningQuestion from './components/induction/CampeigningQuestion';
+import CurrentLocationForm from './components/induction/CurrentLocationForm';
 
 function App() {
   return (
     
-    <Router>
+    <Router >
         
      <Layout>
       <Switch>
@@ -54,7 +57,7 @@ function App() {
             <Signup/>
         </Route>
         <Route exact path="/login">
-            <ProfilePicUploader/>
+            <VoterInfoForm/>
         </Route>
         <Route exact path="/articles/:articleuri">
             <Article/>

@@ -20,7 +20,7 @@ const handleClick = () => {
 const SignupCard = () => {
   const [voterid, setVoterid] = useState("");
   return (
-    <Container className="my-5">
+    <Container className="my-3">
       <Row>
         <Col xs={12} md={6} lg={4} className="mx-auto">
           <Card>
@@ -80,6 +80,27 @@ const SignupCard = () => {
                     />
                   </div>
                 </Form.Group>
+                <Form.Group className="mb-3">
+                  <Form.Label htmlFor="disabledSelect">
+                    As a party member are you comfortable in making your phone number public ?
+                  </Form.Label>
+                  <div key="inline-radio" className="mb-3">
+                    <Form.Check
+                      inline
+                      name="noobjection"
+                      id="noobjection"
+                      type="radio"
+                      label="Yes"
+                    />
+                    <Form.Check
+                      inline
+                      name="noobjection"
+                      id="noobjection"
+                      type="radio"
+                      label="No"
+                    />
+                  </div>
+                </Form.Group>
                 <Form.Group className="mb-3" controlId="phnum">
                   <Form.Control type="text" placeholder="Enter phone number" />
                 </Form.Group>
@@ -89,6 +110,7 @@ const SignupCard = () => {
                     type="button"
                     className="btn-block"
                     onClick={handleClick}
+                    disabled={true}
                   >
                     Generate OTP
                   </Button>
@@ -100,6 +122,7 @@ const SignupCard = () => {
                     className="my-3"
                   />
                 </Form.Group>
+                
                 <ButtonGroup className="d-flex">
                   <Button variant="primary" type="button" className="btn-block">
                     Register
