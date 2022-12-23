@@ -4,12 +4,13 @@ import parse from "html-react-parser";
 import { useFetch } from "use-http";
 import FadeLoader from "react-spinners/FadeLoader";
 import { useParams } from "react-router-dom";
+import {apiBaseUrl} from "../../configs/envconst.config"
 
 
 const Article = () => {
   const {articleuri} = useParams()
   const [content, setContent] = useState("");
-  const { get, loading, error } = useFetch('https://rrp-web-api.herokuapp.com/article/content')
+  const { get, loading, error } = useFetch(apiBaseUrl+'/article/content')
   const loaderStyle = {
     display: "block",
     margin: "25vh auto",

@@ -9,7 +9,7 @@ import Articles from './components/pages/Articles'
 import AboutParty from './components/pages/AboutParty'
 import AboutPresident from './components/pages/AboutPresident'
 import AboutMovement from './components/pages/AboutMovement'
-import Signup from './components/pages/Signup'
+import JoiningForm from './components/pages/JoiningForm'
 import ArticleEditor from './components/editor/ArticleEditor'
 import React from 'react'
 import Article from './components/articles/Article';
@@ -53,11 +53,11 @@ function App() {
         <Route exact path="/editor">
             <ArticleEditor/>
         </Route>
-        <Route exact path="/signup">
-            <Signup/>
+        <Route exact path="/join">
+            <JoiningForm/>
         </Route>
         <Route exact path="/login">
-            <VoterInfoForm/>
+            <LoginCard/>
         </Route>
         <Route exact path="/articles/:articleuri">
             <Article/>

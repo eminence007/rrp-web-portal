@@ -1,10 +1,10 @@
 import React from 'react'
 import SignupCard from '../auth/SignupCard'
 
-const Signup = () => {
+const JoiningForm = () => {
   return (
     <SignupCard/>
   )
 }
 
-export default Signup
+export default JoiningForm
