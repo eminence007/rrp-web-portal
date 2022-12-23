@@ -21,7 +21,7 @@ const Article = () => {
   }, []);
 
   const initializeContent = async () => {
-    const res = await get(articleuri)
+    const res = await get(articleuri+".html")
     setContent(parse(res))
   };
 
