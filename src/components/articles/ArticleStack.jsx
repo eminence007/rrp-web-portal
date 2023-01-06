@@ -26,7 +26,7 @@ function ArticleStack() {
     margin: "25vh auto",
     borderColor: "red",
   };
-
+  
   useEffect(() => {
     initializeContent();
   }, []);
@@ -74,14 +74,14 @@ function ArticleStack() {
   };
    const handlePrevPage =async () => {
     setIsLoading(true);
+    await findArticles(searchText,currentPage-1)
     setCurrentPage(prevCurrentPage => prevCurrentPage-1 )
-    await findArticles(searchText,currentPage)
     setIsLoading(false);
    }
    const handleNextPage =async () => {
     setIsLoading(true);
+    await findArticles(searchText,currentPage+1)
     setCurrentPage(prevCurrentPage => prevCurrentPage+1 )
-    await findArticles(searchText,currentPage)
     setIsLoading(false);
    }
 
