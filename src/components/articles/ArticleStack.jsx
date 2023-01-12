@@ -10,12 +10,11 @@ import {
   Pagination,
 } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import {apiBaseUrl} from "../../configs/envconst.config"
+import {apiBaseUrl,articlesPerPage} from "../../configs/envconst.config"
 
 let firstLoad = true;
 function ArticleStack() {
   const [articleData, setArticleData] = useState([]);
-  const [prevSearchText, setPrevSearchText] = useState("");
   const [searchText, setSearchText] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [tagList, setTagList] = useState([]);
@@ -31,45 +30,34 @@ function ArticleStack() {
     initializeContent();
   }, []);
 
-  const findArticles = async (searchText='', pageNumber=1, articlesPerPage=4) => {
+  const findArticles = async (searchWords='',pageNumber=1) => {
     try {
-      let url =`${apiBaseUrl}/article?searchText=${searchText}&pageNumber=${pageNumber}&articlesPerPage=${articlesPerPage}`
+      let url =`${apiBaseUrl}/article?searchText=${searchWords}&pageNumber=${pageNumber}&articlesPerPage=${articlesPerPage}`
       const res = await fetch(url);
       const articlePage = await res.json();
       const articles =  articlePage.articles;
       setTotalPageCount(articlePage.totalPageCount) 
       setArticleData(articles);
-      if(firstLoad&& articles ){
-        setTagList([
-          ...new Set(
-            articles.map((article) => article.tags).flatMap((tag) => tag)
-          ),
-        ])
-      }
-      
     } catch (error) {
-      console.error(error);
       setArticleData([]);
     }
   }
   const initializeContent = async () => {
     setIsLoading(true);
-     await findArticles();
-  
-      
-     firstLoad=false;
-
+    await findArticles();
+    const res =await fetch(`${apiBaseUrl}/article/tagList`)
+    const tagListRes = await res.json();
+    setTagList(tagListRes.tagList)
+    firstLoad=false;
     setIsLoading(false);
   };
    
 
-  const handleSearch = async () => {
+  const handleSearch = async (e) => {
+    e.preventDefault();
     setIsLoading(true);
     setCurrentPage(1)
-    if (searchText !== prevSearchText) {
-      setPrevSearchText(searchText)
-      await findArticles(searchText,1)
-    }
+    await findArticles(searchText)
     setIsLoading(false);
   };
    const handlePrevPage =async () => {
@@ -94,7 +82,7 @@ function ArticleStack() {
   return (
     <Card className="m-1 m-lg-5">
       <Card.Header className="px-1 px-lg-5">
-        <Form className="d-flex mx-lg-5">
+        <Form className="d-flex mx-lg-5" onSubmit={handleSearch}>
           <Form.Control
             type="search"
             placeholder="खोजें"
@@ -110,9 +98,9 @@ function ArticleStack() {
           </datalist>
           <Button
             variant="outline-success"
-            onClick={handleSearch}
             className="mx-1"
             disabled={isLoading}
+            type='submit'
           >
             खोजें
           </Button>
