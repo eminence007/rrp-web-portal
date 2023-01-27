@@ -8,7 +8,7 @@ import {
     Col,
     ButtonGroup,
   } from "react-bootstrap";
-const ElectionQuestionForm = () => {
+const ElectionQuestionForm = (props) => {
   return (
     <Container className="my-5">
       <Row>
@@ -42,7 +42,7 @@ const ElectionQuestionForm = () => {
                   </div>
                 </Form.Group>
                 <ButtonGroup className="d-flex">
-                  <Button variant="primary" type="button" className="btn-block">
+                  <Button variant="primary" type="button" className="btn-block" onClick={()=>props.handleNext(5)}>
                     Next
                   </Button>
                 </ButtonGroup>

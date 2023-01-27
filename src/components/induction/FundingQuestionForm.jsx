@@ -9,7 +9,7 @@ import {
   ButtonGroup,
 } from "react-bootstrap";
 
-const FundingQuestionForm = () => {
+const FundingQuestionForm = (props) => {
   return (
     <Container className="my-5">
       <Row>
@@ -41,7 +41,7 @@ const FundingQuestionForm = () => {
                   </div>
                 </Form.Group>
                 <ButtonGroup className="d-flex">
-                  <Button variant="primary" type="button" className="btn-block">
+                  <Button variant="primary" type="button" className="btn-block" onClick={()=>props.handleNext(6)}>
                     Next
                   </Button>
                 </ButtonGroup>

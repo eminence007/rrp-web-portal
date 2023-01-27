@@ -23,9 +23,10 @@ const SignupCard = () => {
     <Container className="my-3">
       <Row>
         <Col xs={12} md={6} lg={4} className="mx-auto">
-          <Card>
+        <p className="m-auto"><a href="/login">Login</a> if already a member</p>
+          <Card className="mt-3">
             <Card.Body>
-              <Form>
+              <Form className="my-3">
                 <Form.Group className="mb-3" controlId="voterid">
                   <Form.Control
                     type="text"
@@ -82,7 +83,8 @@ const SignupCard = () => {
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Label htmlFor="disabledSelect">
-                    As a party member are you comfortable in making your phone number public ?
+                    As a party member are you comfortable in making your phone
+                    number public ?
                   </Form.Label>
                   <div key="inline-radio" className="mb-3">
                     <Form.Check
@@ -122,7 +124,7 @@ const SignupCard = () => {
                     className="my-3"
                   />
                 </Form.Group>
-                
+
                 <ButtonGroup className="d-flex">
                   <Button variant="primary" type="button" className="btn-block">
                     Register

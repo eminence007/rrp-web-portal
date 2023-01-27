@@ -11,21 +11,21 @@ function Slider() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/724x240/?school"
+            src="https://source.unsplash.com/724x250/?school"
             alt=""
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/724x240/?computer"
+            src="https://source.unsplash.com/724x250/?computer"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://source.unsplash.com/724x240/?books"
+            src="https://source.unsplash.com/724x250/?books"
             alt="Third slide"
           />
         </Carousel.Item>

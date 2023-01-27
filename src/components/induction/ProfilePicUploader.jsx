@@ -9,7 +9,7 @@ import {
   ButtonGroup,
 } from "react-bootstrap";
 import ImageCropBtn from "../ui/ImageCropBtn";
-const ProfilePicUploader = () => {
+const ProfilePicUploader = (props) => {
   const [profilePic, setProfilePic] = useState("http://simpleicon.com/wp-content/uploads/user-5.png");
   return (
     <Container className="my-5">
@@ -29,7 +29,7 @@ const ProfilePicUploader = () => {
                   <ImageCropBtn onSave={setProfilePic}/>
                 </ButtonGroup>
                 <ButtonGroup className="d-flex">
-                  <Button variant="primary" type="button" className="btn-block">
+                  <Button variant="primary" type="button" className="btn-block" onClick={()=>props.handleNext(4)}>
                     Next
                   </Button>
                 </ButtonGroup>

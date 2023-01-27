@@ -14,6 +14,7 @@ const LoginCard = () => {
     <Container className="my-5">
       <Row>
         <Col xs={12} md={6} lg={4} className="mx-auto">
+          <p><a href='/join'>Join</a> us to login if not a member</p>
           <Card>
             <Card.Body>
               <Form>

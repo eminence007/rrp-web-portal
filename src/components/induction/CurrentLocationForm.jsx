@@ -9,7 +9,7 @@ import {
     ButtonGroup,
   } from "react-bootstrap";
 
-const CurrentLocationForm = () => {
+const CurrentLocationForm = (props) => {
   return (
     <Container className="my-5">
       <Row>
@@ -62,7 +62,7 @@ const CurrentLocationForm = () => {
                   />
                 </Form.Group>
                 <ButtonGroup className="d-flex">
-                  <Button variant="primary" type="button" className="btn-block">
+                  <Button variant="primary" type="button" className="btn-block" onClick={()=>props.handleNext(3)}>
                     Next
                   </Button>
                 </ButtonGroup>
